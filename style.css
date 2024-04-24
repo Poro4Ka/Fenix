@@ -1,0 +1,29 @@
+@media (max-width: 650px) {
+    .button-container {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .image-container1 {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .big-image {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
