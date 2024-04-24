@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об отряде</title>
+ <style> 
+    body {   
+        margin: 0;   
+        padding: 0;   
+        display: flex;   
+        height: 100vh;   
+        background-color: #000; /* Цвет заднего фона */   
+        background-image: url('ф.jpg'); /* Задний пылающий фон */   
+        background-size: cover;   
+        background-blend-mode: screen; /* Режим смешивания для пылающего эффекта */   
+        color: #fff; /* Белый цвет текста */ 
+    }   
+
+    .gallery { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        margin-top: 20px; 
+    } 
+
+    .photo { 
+        width: 30%; 
+        margin-bottom: 20px; 
+        position: relative; 
+        overflow: hidden; 
+    } 
+
+    .photo img { 
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        transition: transform 0.3s ease-in-out; 
+    } 
+
+    .photo p { 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        padding: 10px; 
+        background-color: rgba(0, 0, 0, 0.7); /* Прозрачный черный фон для описания */ 
+        text-align: center; 
+        transform: translateY(100%); 
+        transition: transform 0.3s ease-in-out; 
+    } 
+
+    .photo:hover p { 
+        transform: translateY(0); 
+    } 
+
+    .info { 
+        margin-top: 20px; 
+        padding: 20px; 
+        background-color: rgba(0, 0, 0, 0.7); /* Прозрачный черный фон для информационного поля */ 
+    } 
+
+    h1, p, h2 {
+        color: #fff; /* Белый цвет текста */
+        text-align: center; /* Выравнивание по центру */
+    }
+    .centered-image img {
+    max-width: 50%;
+    height: auto;
+}
+ h2 {
+            font-family: "macherie";
+            color: #FFFFFF;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        }
+         h1 {
+            font-family: "macherie";
+            color: #FFFFFF;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+        }
+</style> 
+
+</head>
+<body>
+<div class="menu">
+    <div class="menu-text">
+        <h1>Информация об отряде</h1>
+       <p style= "font-size:30px; " >Мы ССервО "Феникс"  рады видеть тебя на нашем сайте. Ниже ты можешь ознакомиться подробнее с нашим командирским составом.</p>
+    </div>
+ 
+
+<div class="gallery">
+    <div class="photo">
+        <img src="коман.png" alt="Фото 1">
+        <p>Кто рано встаёт, тому весь день спать хочется</p>
+    </div>
+
+    <div class="photo">
+        <img src="комис.png" alt="Фото 2">
+        <p>Давайте делать всё возможное</p>
+    </div>
+
+    <div class="photo">
+        <img src="роман.png" alt="Фото 3">
+        <p>Никогда не говори никогда</p>
+    </div>
+
+    <div class="photo">
+        <img src="рук.png" alt="Фото 4">
+        <p>Не стоит переживать о том, где мы были бессильны</p>
+    </div>
+
+    <div class="photo">
+        <img src="зам.png" alt="Фото 5">
+        <p>Лучше поздно, чем никогда</p>
+    </div>
+</div>
+
+<div class="info">
+    <h2>Студенческий Сервисный Отряд</h2>
+   <p style="font-size: 22px">Привет, друг!
+<b style="color:red">Гори, но не сгорай...</b>
+Интересная фраза, правда? А отуда же она?
+Сейчас мы всё расскажем!
+<b style=>Мы</b> - Студенческий сервисный отряд <b style="color:brown">"Феникс"</b>! Кроме того, являемся частицей самой большой молодёжной общественной организацией — <b style="color:red">РСО (Российские Студенческие Отряды)</b>!
+Крутые <b style="color:brown">сборы</b>, куча новых <b style="color:brown">знакомств</b>, лучшие <b style="color:brown">эмоции</b>, тёплые <b style="color:brown">воспоминания</b> и шикарное студенчество - <b style="color:brown">всё это мы</b>.
+Мы занимаемся работой в сфере <b style="color:brown">сервисного обслуживания в летний период</b>, участвуем в различных городских мероприятиях и форумах в учебное время и просто круто живём эту жизнь, раскрашивая свою молодость!
+Мы уверены, что <b>ты</b> (да-да, именно ты) позитивный, креативный человечек, готовый узнать много нового, обрести крутую и дружную семью, познать искусство работы в сервисном направлении и почувствовать тебя частью чего-то масштабного.
+Мы ждём именно тебя, ведь в РСО определённо лучшие люди, ведь мы лучшее движение в стране!
+<b style="color:brown">Не теряй время зря - вступай в ССервО "Феникс"</b>!
+<b style="color:red">Гори, но не сгорай!</b></p>
+</div>
+
+
+</body>
+</html>
