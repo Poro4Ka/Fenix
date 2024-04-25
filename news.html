@@ -1,0 +1,31 @@
+<html lang="en">   
+<head>   
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>   
+    <title>Новости</title>  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+</head>   
+<body>   
+    <div class="topnav" id="myTopnav">
+        <a href="/">Главная</a>
+        <a href="about.html">Об отряде</a>
+        <a href="https://трудкрут.рф/">О РСО</a>
+        <a href="news.html" class="active">Новости</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </a>
+      </div>
+    <div id="vk_groups"></div>   
+    <div class="sidebar">  
+        <img src="img/Феникс.jpg" alt="Image"> <!-- Используйте изображение с прозрачным фоном (.png) -->  
+        <p style="font-size: 40px">Гори, но не сгорай!</p>  
+    </div>  
+   
+    <script type="text/javascript">   
+        VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: 500, height: 750, color1: "ffffff", color2: "ff00007f", color3: "5181B8"}, 173135044);   
+        document.getElementById('vk_groups').style.textAlign = 'center';   
+    </script>  
+</body>  
+</html>

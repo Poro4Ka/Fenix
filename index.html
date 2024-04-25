@@ -1,0 +1,67 @@
+<!DOCTYPE html>   
+<html>   
+<head> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <title>Главная</title>   
+    <script
+  type="text/javascript"
+  src="img/https://vk.com/js/api/openapi.js?168"
+  charset="windows-1251"
+></script>
+
+
+<script type="text/javascript"> 
+  function openVKChat() { 
+    var chatWindow = window.open('https://vk.com/im?sel=-173135044', '_blank', 'width=400,height=600,toolbar=no,location=no,status=no,menubar=no'); 
+    chatWindow.addEventListener('beforeunload', function (event) {
+        event.returnValue = 'Are you sure you want to leave?';
+        return null;
+    });
+  } 
+</script> 
+    
+</head>   
+<body>   
+  <div class="topnav" id="myTopnav">
+    <a href="/" class="active">Главная</a>
+    <a href="about.html">Об отряде</a>
+    <a href="https://трудкрут.рф/">О РСО</a>
+    <a href="news.html">Новости</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </a>
+  </div>
+<!--<div class="button-container">     
+    <button class="button" onclick="location.href='about.html'">Об отряде</button>     
+    <button class="button" onclick="location.href='https://трудкрут.рф/'">О РСО</button>     
+    <button class="button" onclick="location.href='news.html'">Новости</button>     
+    <button class="button" onclick="openVKChat()">Связаться с нами!</button>    
+</div> -->
+<h1 style="font-size: 100px"><center>Залетай на огонёк!</center></h1>   
+
+   
+
+<div class="image-container"> 
+    <img src="img/оформа4.png" alt="Big Photo" class="big-image"> 
+</div> 
+
+<div class="container">   
+
+<div class="image-container1"> 
+    <img src="img/рсо.svg" alt="" height="50"> 
+    <img src="img/восток.png" alt="" height="50"> 
+</div> 
+
+<div class="content">   
+
+<!-- Здесь будет информация вдоль всего сайта -->   
+
+   
+
+
+
+</div>   
+<script src="script.js"></script>
+</body>    
+</html>
