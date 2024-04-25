@@ -6,3 +6,10 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+ function openVKChat() { 
+    var chatWindow = window.open('https://vk.com/im?sel=-173135044', '_blank', 'width=400,height=600,toolbar=no,location=no,status=no,menubar=no'); 
+    chatWindow.addEventListener('beforeunload', function (event) {
+        event.returnValue = 'Are you sure you want to leave?';
+        return null;
+    });
+  } 
