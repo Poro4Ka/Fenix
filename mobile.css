@@ -21,4 +21,7 @@
     input[type="text"] {
         width: 80%;
     }
+    .sidebar {
+        display: none;
+    }
 }
