@@ -201,10 +201,7 @@ h1,h2 {
     display: none;
   }
 
-.image-container1 img {
-    height: 100px;
-    width: auto;
-}
+
   
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
