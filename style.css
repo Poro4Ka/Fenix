@@ -200,8 +200,10 @@ h1,h2 {
   .topnav .icon {
     display: none;
   }
-.image-container1 img[src="img/kuni.png"] {
-    height: 50px;
+
+.image-container img {
+    height: 100px;
+    width: auto;
 }
   
   @media screen and (max-width: 600px) {
