@@ -22,6 +22,15 @@
         return null;
     });
   } 
+  function openPaymentModal() {
+    var modal = document.getElementById("paymentModal");
+    modal.style.display = "block";
+  }
+
+  function closePaymentModal() {
+    var modal = document.getElementById("paymentModal");
+    modal.style.display = "none";
+  }
 </script> 
 </head>
 <body>
@@ -30,11 +39,13 @@
         <a href="about.html" class="active">Об отряде</a>
         <a href="https://трудкрут.рф/">О РСО</a>
         <a href="news.html">Новости</a>
+        <a href="#" onclick="openPaymentModal()">Членский взнос</a>
         <a href="#" onclick="openVKChat()">Связаться с нами!</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
         </a>
       </div>
+     
 <div class="menu">
     <div class="menu-text">
         <h1>Информация об отряде</h1>
@@ -87,6 +98,23 @@
            <br>
     <b>Гори, но не сгорай!</b></p>
     </div>
+    <span class="close-modal" onclick="closePaymentModal()">&times;</span>
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closePaymentModal()">&times;</span>
+    <h2>Выберите способ оплаты</h2>
+   <p>Членский взнос составляет 500Р, без него вы не сможите поехать на целину, ваши деньги пойдут на пользу вашего отряда!</p>
+   <p>Валюта получаемого перевода: Российский рубль (RUB)</p>
+    <p>Получатель: АЛЕШИН СЕРГЕЙ АЛЕКСАНДРОВИЧ</p>
+    <p>Номер счёта: 40817810346003361783</p>
+    <div class="payment-icons">
+      <img src="img/vtb.png" alt="vtb" onclick="window.location.href='https://www.vtb.ru/'">
+      <img src="img/tinkof.png" alt="tinkoff" onclick="window.location.href='https://www.tinkoff.ru/'">
+      <img src="img/sber.png" alt="sber" onclick="window.location.href='https://www.sberbank.ru/'">
+      <img src="img/alfa.png" alt="alfa" onclick="window.location.href='https://alfabank.ru/'">
+    </div>
+  </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

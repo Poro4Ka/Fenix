@@ -1,68 +1,85 @@
-<!DOCTYPE html>   
-<html>   
-<head> 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="mobile.css">
-    <title>Главная</title>   
-    <script
-  type="text/javascript"
-  src="img/https://vk.com/js/api/openapi.js?168"
-  charset="windows-1251"
-></script>
+<!DOCTYPE html>    
+<html>    
+<head>  
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="mobile.css"> 
+    <title>Главная</title>    
+    <script 
+  type="text/javascript" 
+  src="img/https://vk.com/js/api/openapi.js?168" 
+  charset="windows-1251" 
+></script> 
+ 
+ 
+<script type="text/javascript">  
+  function openVKChat() {  
+    var chatWindow = window.open('https://vk.com/im?sel=-173135044', '_blank', 'width=400,height=600,toolbar=no,location=no,status=no,menubar=no');  
+    chatWindow.addEventListener('beforeunload', function (event) { 
+        event.returnValue = 'Are you sure you want to leave?'; 
+        return null; 
+    }); 
+  }  
 
+  function openPaymentModal() {
+    var modal = document.getElementById("paymentModal");
+    modal.style.display = "block";
+  }
 
-<script type="text/javascript"> 
-  function openVKChat() { 
-    var chatWindow = window.open('https://vk.com/im?sel=-173135044', '_blank', 'width=400,height=600,toolbar=no,location=no,status=no,menubar=no'); 
-    chatWindow.addEventListener('beforeunload', function (event) {
-        event.returnValue = 'Are you sure you want to leave?';
-        return null;
-    });
-  } 
-</script> 
-    
-</head>   
-<body>   
-  <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Главная</a>
-    <a href="about.html">Об отряде</a>
-    <a href="https://трудкрут.рф/">О РСО</a>
-    <a href="news.html">Новости</a>
-    <a href="#" onclick="openVKChat()">Связаться с нами!</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-    </a>
+  function closePaymentModal() {
+    var modal = document.getElementById("paymentModal");
+    modal.style.display = "none";
+  }
+</script>  
+     
+</head>    
+<body>    
+  <div class="topnav" id="myTopnav"> 
+    <a href="index.html" class="active">Главная</a> 
+    <a href="about.html">Об отряде</a> 
+    <a href="https://трудкрут.рф/">О РСО</a> 
+    <a href="news.html">Новости</a> 
+    <a href="#" onclick="openPaymentModal()">Членский взнос</a> 
+    <a href="#" onclick="openVKChat()">Связаться с нами!</a> 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg> 
+    </a> 
+  </div> 
+
+<h1 style="font-size: 100px"><center>Залетай на огонёк!</center></h1>    
+
+<div class="image-container">  
+    <img src="img/оформа.png" alt="Big Photo" class="big-image">  
+</div>  
+
+<div class="container">    
+
+<div class="image-container1">  
+    <img src="img/niz.png" alt="" height="50"> 
+</div>  
+
+<div class="content">    
+
+<!-- Здесь будет информация вдоль всего сайта -->    
+
+</div>
+
+<span class="close-modal" onclick="closePaymentModal()">&times;</span>
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closePaymentModal()">&times;</span>
+    <h2>Выберите способ оплаты</h2>
+   <p>Членский взнос составляет 500Р, без него вы не сможите поехать на целину, ваши деньги пойдут на пользу вашего отряда!</p>
+   <p>Валюта получаемого перевода: Российский рубль (RUB)</p>
+    <p>Получатель: АЛЕШИН СЕРГЕЙ АЛЕКСАНДРОВИЧ</p>
+    <p>Номер счёта: 40817810346003361783</p>
+    <div class="payment-icons">
+      <img src="img/vtb.png" alt="vtb" onclick="window.location.href='https://www.vtb.ru/'">
+      <img src="img/tinkof.png" alt="tinkoff" onclick="window.location.href='https://www.tinkoff.ru/'">
+      <img src="img/sber.png" alt="sber" onclick="window.location.href='https://www.sberbank.ru/'">
+      <img src="img/alfa.png" alt="alfa" onclick="window.location.href='https://alfabank.ru/'">
+    </div>
   </div>
-<!--<div class="button-container">     
-    <button class="button" onclick="location.href='about.html'">Об отряде</button>     
-    <button class="button" onclick="location.href='https://трудкрут.рф/'">О РСО</button>     
-    <button class="button" onclick="location.href='news.html'">Новости</button>     
-    <button class="button" onclick="openVKChat()">Связаться с нами!</button>    
-</div> -->
-<h1 style="font-size: 100px"><center>Залетай на огонёк!</center></h1>   
-
-   
-
-<div class="image-container"> 
-    <img src="img/оформа.png" alt="Big Photo" class="big-image"> 
-</div> 
-
-<div class="container">   
-
-<div class="image-container1"> 
-    <img src="img/niz.png" alt="" height="50">
-    
-</div> 
-
-<div class="content">   
-
-<!-- Здесь будет информация вдоль всего сайта -->   
-
-   
-
-
-
-</div>   
-<script src="script.js"></script>
-</body>    
+</div>
+<script src="script.js"></script> 
+</body>     
 </html>

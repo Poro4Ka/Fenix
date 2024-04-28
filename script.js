@@ -13,3 +13,8 @@ function myFunction() {
         return null;
     });
   } 
+  document.addEventListener('click', function(event) {
+    if (event.target.id === 'membershipLink') {
+        openPaymentModal();
+    }
+});
