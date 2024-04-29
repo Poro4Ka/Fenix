@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 600px) {
   .payment-icons {
-    display: none; /* Скрываем большие картинки на мобильной версии */
+   /* display: none; Скрываем большие картинки на мобильной версии */
   }
 
   .payment-icons-mobile {
