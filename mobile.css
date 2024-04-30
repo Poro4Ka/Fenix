@@ -10,10 +10,6 @@
         margin: 10px auto;
     }
 
-    .big-image {
-        width: 100%;
-    }
-
     h1 {
         font-size: 60px;
     }
@@ -21,27 +17,10 @@
     input[type="text"] {
         width: 80%;
     }
-    .sidebar {
-        display: none;
-    }
 }
 .payment-icons-mobile {
   display: none; /* Сначала скрываем маленькие картинки на мобильной версии */
 }
 
-@media only screen and (max-width: 600px) {
-  .payment-icons {
-   /* display: none; Скрываем большие картинки на мобильной версии */
-  }
 
-  .payment-icons-mobile {
-    display: block; /* Показываем маленькие картинки на мобильной версии */
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .cross-icon {
-    display: none;
-  }
-}
 
