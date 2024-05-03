@@ -21,6 +21,9 @@
 .payment-icons-mobile {
   display: none; /* Сначала скрываем маленькие картинки на мобильной версии */
 }
+.sidebar {
+display: none
+}
 
 
 
