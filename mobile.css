@@ -21,9 +21,11 @@
 .payment-icons-mobile {
   display: none; /* Сначала скрываем маленькие картинки на мобильной версии */
 }
-.sidebar {
-display: none
+@media only screen and (max-width: 768px) {
+    .sidebar img,
+    .sidebar p {
+        display: none;
+    }
 }
-
 
 
